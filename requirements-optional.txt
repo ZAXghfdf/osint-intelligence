@@ -1,0 +1,18 @@
+# Optional third-party packages (the core app runs with the Python standard library only).
+# Install only if/when you want the extra capabilities noted.
+#
+# PostgreSQL support (production) — SQLAlchemy + psycopg:
+# sqlalchemy>=2.0
+# psycopg[binary]>=3.1
+#
+# XLSX export (import already works via stdlib):
+# openpyxl>=3.1
+#
+# Image EXIF for the standalone image-analysis view:
+# pillow>=10.0
+#
+# Phone number validation:
+# phonenumbers>=8.13
+#
+# NOTE: On Termux, prefer `pkg install python-<name>` where available; some
+# packages with C extensions may need a build toolchain.

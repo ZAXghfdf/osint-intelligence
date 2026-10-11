@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Runtime data (never commit DB, uploads, evidence, secrets)
+data/osint.db
+data/osint.db-*
+data/uploads/
+data/evidence/
+data/reports/
+data/secrets.json
+data/authorized_targets.json
+
+# OS / editor
+.DS_Store
+*.log
+*.swp
+.idea/
+.vscode/

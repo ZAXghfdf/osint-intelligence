@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>OSINT INTELLIGENCE — منصة الاستخبارات مفتوحة المصدر</title>
+  <link rel="stylesheet" href="/static/css/app.css" />
+</head>
+<body>
+  <div id="login-screen" class="login-screen hidden">
+    <form id="login-form" class="login-card" autocomplete="off">
+      <div class="brand-mark">OSINT<span>INTELLIGENCE</span></div>
+      <p class="login-sub">منصة تحليل وربط المعلومات الرقمية مفتوحة المصدر</p>
+      <label>اسم المستخدم
+        <input type="text" id="login-user" required autocomplete="username" />
+      </label>
+      <label>كلمة المرور
+        <input type="password" id="login-pass" required autocomplete="current-password" />
+      </label>
+      <div id="login-error" class="error-text"></div>
+      <button type="submit" class="btn primary">تسجيل الدخول</button>
+      <p class="hint">المنصة للاستخدام المصرّح به فقط وفق المصادر العامة وشروط استخدامها.</p>
+    </form>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside id="sidebar" class="sidebar">
+      <div class="brand">
+        <div class="brand-mark small">OSINT<span>INTELLIGENCE</span></div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#/dashboard" data-route="dashboard"><span class="ico">▤</span> لوحة المعلومات</a>
+        <a href="#/search" data-route="search"><span class="ico">⌕</span> محرك البحث</a>
+        <a href="#/searches" data-route="searches"><span class="ico">≡</span> عمليات البحث</a>
+        <a href="#/graph" data-route="graph"><span class="ico">⌘</span> خريطة العلاقات</a>
+        <a href="#/datasets" data-route="datasets"><span class="ico">▦</span> قاعدة البيانات</a>
+        <a href="#/tools" data-route="tools"><span class="ico">⚙</span> مركز الأدوات</a>
+        <a href="#/github" data-route="github"><span class="ico">◈</span> اكتشاف GitHub</a>
+        <a href="#/reports" data-route="reports"><span class="ico">▥</span> التقارير</a>
+        <a href="#/sources" data-route="sources"><span class="ico">⛁</span> المصادر</a>
+        <a href="#/admin" data-route="admin"><span class="ico">⚿</span> الإدارة</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div id="user-chip" class="user-chip"></div>
+        <button id="logout-btn" class="btn ghost small">خروج</button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button id="menu-btn" class="btn ghost icon-only" aria-label="القائمة">☰</button>
+        <h1 id="page-title">لوحة المعلومات</h1>
+        <div class="topbar-actions">
+          <span id="env-badge" class="badge muted">تطوير</span>
+        </div>
+      </header>
+      <main id="view" class="view"></main>
+    </div>
+    <div id="toast" class="toast hidden"></div>
+  </div>
+
+  <div id="modal-root"></div>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/ui.js"></script>
+  <script src="/static/js/graph.js"></script>
+  <script src="/static/js/views/dashboard.js"></script>
+  <script src="/static/js/views/search.js"></script>
+  <script src="/static/js/views/search_detail.js"></script>
+  <script src="/static/js/views/searches.js"></script>
+  <script src="/static/js/views/graph.js"></script>
+  <script src="/static/js/views/datasets.js"></script>
+  <script src="/static/js/views/tools.js"></script>
+  <script src="/static/js/views/github.js"></script>
+  <script src="/static/js/views/reports.js"></script>
+  <script src="/static/js/views/sources.js"></script>
+  <script src="/static/js/views/admin.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
